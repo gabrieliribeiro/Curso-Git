@@ -21,11 +21,11 @@ O git é um projeto de código aberto.
  * Para criar um repositório utilizamos o comando git init;
  * Desta maneira o git vai criar os arquivos necessários para inicializá-los;
  * Que estão na pasta oculta .git;
- * Após este comando o diretório atual será reconhecido pelo git como um projeto e reponderá aos seus demais comandos;
+ * Após este comando o diretório atual será reconhecido pelo git como um projeto e reponderá aos seus demais comandos.
 
  ### ╰┈┈┈➤ Enviando repositórios para o GH 
   
-  ➔ COMANDOS FUNDAMENTAIS :
+ ##### ➔ COMANDOS FUNDAMENTAIS :
 * git init ( para novos repositórios)
 * git status
 * git add < file > ( add . <seleciona todos os arquivos>)
@@ -43,15 +43,25 @@ O git é um projeto de código aberto.
 
 ###  ╰┈┈┈➤ Branches
  
-  ➔ O que é um branch?	
+  #### ➔ O que é um branch?	
  * Branch é a forma que o git separa as versões dos projetos;
  * Quando um projeto é criado ele inicia na branch main;
  * Geralmente cada nova feature de um projeto fica em um branch separado;
- * Após a finalização das alterações os branchs são unidos para ter o código-fonte final;
+ * Após a finalização das alterações os branchs são unidos para ter o código-fonte final.
  
 ###  ╰┈┈┈➤ Criando e vizualizando Branches
  * git branch (para vizualiizar)
  * git branch < nome > (para criar)
+ 
+ ###  ╰┈┈┈➤ Deletando Branches
+  * -d ou --delete
+  * Não é comum deletar um branch, pois normalmente se guarda o histórico do trabalho;
+  * Ele é geralmente usado quando o branch foi criado errado;
+  
+ ###  ╰┈┈┈➤ Mudando de Branch
+  * Podemos mudar para outro branch utilzando o comando: git checkout -b < nome > 
+  * Este comando também é utilizado para dispensar mudanças de um arquivo;
+  * Alterando o branch podemos levar alterações que não foram commitadas junto, **tome cuidado**
  
 (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
