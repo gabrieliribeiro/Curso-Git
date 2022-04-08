@@ -14,32 +14,32 @@
 * O sistema de controle de versão mais utilizado do mundo atualmente;
 * O git é baseado em repositórios, que contêm todas as versões do código e também as cópias de cada desenvolvedor;
 * Todas as operações do git são otimizadas para ter alto desempenho;
-* Todos os objetivos do git são prtegidos como criptografia para evitar alterações indevidas e maliciosas;
+* Todos os objetivos do git são protegidos com criptografia para evitar alterações indevidas e maliciosas;
 O git é um projeto de código aberto.
 
  ### ╰┈┈┈➤ Criando repositórios 
- * Para criar um repositório utilizamos o comando git init;
+ * Para criar um repositório utilizamos o comando *git init*;
  * Desta maneira o git vai criar os arquivos necessários para inicializá-los;
- * Que estão na pasta oculta .git;
+ * Que estão na pasta oculta *.git*;
  * Após este comando o diretório atual será reconhecido pelo git como um projeto e reponderá aos seus demais comandos.
 
  ### ╰┈┈┈➤ Enviando repositórios para o GH 
   
  ##### ➔ COMANDOS FUNDAMENTAIS :
-* git init ( para novos repositórios)
-* git status
-* git add < file > ( add . <seleciona todos os arquivos>)
-* git commit < files > (-a <todos>) -m ""
-* git push
-* git pull (buscando att)
-* git clone (clonar repositório) 
-* git rm (deletar arquivos)
-* git log (receber informações) (ctrl+q pra sair)
-* git mv (renomear arquivos/mover para outra pasta)
-  (para renomear: git mv < file > < file att > )
-* git checkout <file> (retornado ao estado original)
-* .gitignore (ignorar arquivos)
-* git reset (geralmente usado com a flag --hard) origin/main
+* *git init* ( para novos repositórios)
+* *git status*
+* *git add < file >* ( add . <seleciona todos os arquivos>)
+* *git commit < files > (-a < todos >) -m ""*
+* *git push*
+* *git pull* (buscando att)
+* *git clone* (clonar repositório) 
+* *git rm* (deletar arquivos)
+* *git log* (receber informações) (ctrl+q pra sair)
+* *git mv* (renomear arquivos/mover para outra pasta)
+  (para renomear: *git mv < file > < file att >* )
+* *git checkout <file>* (retornado ao estado original)
+* *.gitignore* (ignorar arquivos)
+* *git reset* (geralmente usado com a flag --hard) origin/main
 
 ###  ╰┈┈┈➤ Branches
  
@@ -50,18 +50,23 @@ O git é um projeto de código aberto.
  * Após a finalização das alterações os branchs são unidos para ter o código-fonte final.
  
 ###  ╰┈┈┈➤ Criando e vizualizando Branches
- * git branch (para vizualiizar)
- * git branch < nome > (para criar)
+ * *git branch* (para vizualiizar)
+ * *git branch < nome >* (para criar)
  
  ###  ╰┈┈┈➤ Deletando Branches
-  * -d ou --delete
+  * *-d ou --delete*
   * Não é comum deletar um branch, pois normalmente se guarda o histórico do trabalho;
-  * Ele é geralmente usado quando o branch foi criado errado;
+  * Ele é geralmente usado quando o branch foi criado errado.
   
  ###  ╰┈┈┈➤ Mudando de Branch
-  * Podemos mudar para outro branch utilzando o comando: git checkout -b < nome > 
+  * Podemos mudar para outro branch utilzando o comando: *git checkout -b < nome >* 
   * Este comando também é utilizado para dispensar mudanças de um arquivo;
-  * Alterando o branch podemos levar alterações que não foram commitadas junto, **tome cuidado**
+  * Alterando o branch podemos levar alterações que não foram commitadas junto, **tome cuidado!** .
+ 
+ ###  ╰┈┈┈➤ Unindo Branchs
+  * O código de dois branches distintos pode ser unido pelo comando: *git merge < nome >*
+  * Esse seria mais um comando para a lista de mais utilizados;
+  * Normalmente é por meio dele que recebemos as atualizações de outros devs.
  
 (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
