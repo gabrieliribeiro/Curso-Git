@@ -88,6 +88,10 @@ O git é um projeto de código aberto.
    * A tag é diferente do stash, serve como um **checkpoint de um branch**;
    * É utilizada para demarcar estágios do desenvolvimento de algum recurso.
  
+ ###  ╰┈┈┈➤ Verificando e atualizando Tags
+   * Podemos verificar uma tag com o comando: *git show < nome >*;
+   * Podemos trocar de tags com o comando: *git checkout < nome >*;
+   * Desta maneira podemos retroceder ou avançar em checkpoints de um branch.
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
