@@ -88,6 +88,7 @@ O git é um projeto de código aberto.
    * A tag é diferente do stash, serve como um **checkpoint de um branch**;
    * É utilizada para demarcar estágios do desenvolvimento de algum recurso.
  
+ 
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
 
