@@ -68,7 +68,27 @@ O git é um projeto de código aberto.
   * Esse seria mais um comando para a lista de mais utilizados;
   * Normalmente é por meio dele que recebemos as atualizações de outros devs.
  
-(ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
+ ###  ╰┈┈┈➤ Stash
+  * Podemos salvar modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código;
+  * O comando para esta ação é o: *git stash*;
+  * Após o comando o branch será resetado par sua versão de acordo com o repo.
+ 
+ ###  ╰┈┈┈➤ Recuperando Stash
+  * Podemos verificar as stashs criadas pelo comando: *git stash list*;
+  * E também podemos recuperar com o comando: *git stash apply < nome >*;
+  * Podemos ver as alterações delas com : *git stash show -p < nome >*;
+  * Dessa maneira podemos continuar de onde paramos com os arquivos adicionados a stash.
+ 
+  ###  ╰┈┈┈➤ Removendo Stash
+   * Para limpar totalmente as stash de um branch podemos utilizar o comando: *git stash clear*;
+   * Caso seja necessário deletar uma stash específica podemos utilizar: *stash drop < nome >*.
+ 
+ ###  ╰┈┈┈➤ Utilizandos Tags
+   * Podemos criar tags nos branchs por meio do comando : *git tag -a < nome > -m "< msg >"*;
+   * A tag é diferente do stash, serve como um **checkpoint de um branch**;
+   * É utilizada para demarcar estágios do desenvolvimento de algum recurso.
+ 
+ (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
 
 
