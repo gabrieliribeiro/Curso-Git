@@ -93,6 +93,17 @@ O git é um projeto de código aberto.
    * Podemos trocar de tags com o comando: *git checkout < nome >*;
    * Desta maneira podemos retroceder ou avançar em checkpoints de um branch.
  
+  ###  ╰┈┈┈➤ Enviando e compartilhando Tags
+   * As tags podem ser enviadas para o repositório de código, sendo compartilhada entre os devs;
+   * O comando é: *git push origin < nome >*;
+   * Ou se quiser enviar mais tags: *git push origin --tags*.
+ 
+ ###  ╰┈┈┈➤ Compartilhamento e atualização
+   * Branches novos são criados a todo tempo e o seu git pode não estar mapeando eles;
+   * Com o comando *git fetch* você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
+   * Este comando é útil para utilizar o branch de algum outro dev do time, por exemplo.
+   
+ 
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
 
