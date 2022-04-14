@@ -98,11 +98,24 @@ O git é um projeto de código aberto.
    * O comando é: *git push origin < nome >*;
    * Ou se quiser enviar mais tags: *git push origin --tags*.
  
- ###  ╰┈┈┈➤ Compartilhamento e atualização
-   * Branches novos são criados a todo tempo e o seu git pode não estar mapeando eles;
-   * Com o comando *git fetch* você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
+ ###  ╰┈┈┈➤ Encontrando branchs
+   * Branchs novos são criados a todo tempo e o seu git pode não estar mapeando eles;
+   * Com o comando: *git fetch*, você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
    * Este comando é útil para utilizar o branch de algum outro dev do time, por exemplo.
    
+ ###  ╰┈┈┈➤ Recebendo alterações
+   * O comando: *git pull*, serve para recebermos atualizações do repositório remoto;
+   * Cada branch pode ser atualizado com o *git pull*;
+   * Utilizamos para atualizar a master do repo como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev.
+ 
+  ###  ╰┈┈┈➤ Enviando alterações
+   * O comando: *git push*, faz o inverso do pull, ele envia as alterações para o repo remoto;
+   * Serve também para **enviar as atualizações de um branch específico** para um outro dev;
+   * Ou quando terminamos uma tarefa e precisamos enviar para o repo.
+ 
+  ###  ╰┈┈┈➤ Utilizando o remote
+   * Com o *git remote* podemos fazer algumas ações como: adicionar um repo para trackear ou remover;
+   * Quando criamos um repo remoto, adicionamos ele ao git com *git remote add origin < link >**.
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
