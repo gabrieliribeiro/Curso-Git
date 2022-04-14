@@ -115,7 +115,7 @@ O git é um projeto de código aberto.
  
   ###  ╰┈┈┈➤ Utilizando o remote
    * Com o *git remote* podemos fazer algumas ações como: adicionar um repo para trackear ou remover;
-   * Quando criamos um repo remoto, adicionamos ele ao git com *git remote add origin < link >**.
+   * Quando criamos um repo remoto, adicionamos ele ao git com **git remote add origin < link >**.
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
