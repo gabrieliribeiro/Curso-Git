@@ -117,6 +117,34 @@ O git é um projeto de código aberto.
    * Com o *git remote* podemos fazer algumas ações como: adicionar um repo para trackear ou remover;
    * Quando criamos um repo remoto, adicionamos ele ao git com *git remote add origin < link >*.
  
+  ###  ╰┈┈┈➤ Trabalhando com submódulos
+   * Submódulo é  a maneira que temos de possuir dois ou mais projetos em um só repositório;
+   * Podemos adicionar uma depedência ao nosso projeto atual, porém mantendo suas estruturas separadas;
+   * Para adicionar o submódulo utilizamos o comando: *git submodule add < repo >*;
+   * Para verificar os submódulos o comando é : *git submodule*.
+ 
+ ###  ╰┈┈┈➤ Atualizando submódulo
+   * Para atualizar um submódulo primeiro devemos **comitar as mudanças**;
+   * E para enviar para o repo do submódulo utilizamos: *git push --recurse-submodules=on-demand*;
+   * Este fluxo fará a atualização apenas no submódulo.
+ 
+ ###  ╰┈┈┈➤ Exibindo Inf
+   * O comando: *git show*, nos dá diversas informações úteis;
+   * Ele nos dá informações do branch atual e também de seus **commits**;
+   * As **modificações de arquivos** entre cada commit também são exibidas;
+   * Podemos exibir as informações de tags também com: *git show < tag >.
+ 
+ ###  ╰┈┈┈➤ Exibindo Diferenças
+   * O comando: *git diff* serve para exibir as diferenças de um branch;
+   * Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
+   * Podemos também verificar a diferença entre arquivos com o comando: *git diff < arquivo > < arquivo_b >*.
+ 
+ ###  ╰┈┈┈➤ Log Resumido
+   * O comando: *git shortlog* nos dá um log resumido do projeto;
+   * Cada commit será unido por **nome do autor**;
+   * Podemos então saber quais commits foram enviados ao projeto e por quem;
+   * Esse comando não tem nada haver com o branch e sim com o repositório.
+ 
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
 
