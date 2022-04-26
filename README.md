@@ -128,11 +128,11 @@ O git é um projeto de código aberto.
    * E para enviar para o repo do submódulo utilizamos: *git push --recurse-submodules=on-demand*;
    * Este fluxo fará a atualização apenas no submódulo.
  
- ###  ╰┈┈┈➤ Exibindo Inf
+ ###  ╰┈┈┈➤ Exibindo Informações
    * O comando: *git show*, nos dá diversas informações úteis;
    * Ele nos dá informações do branch atual e também de seus **commits**;
    * As **modificações de arquivos** entre cada commit também são exibidas;
-   * Podemos exibir as informações de tags também com: *git show < tag >.
+   * Podemos exibir as informações de tags também com: *git show < tag >*.
  
  ###  ╰┈┈┈➤ Exibindo Diferenças
    * O comando: *git diff* serve para exibir as diferenças de um branch;
@@ -144,6 +144,50 @@ O git é um projeto de código aberto.
    * Cada commit será unido por **nome do autor**;
    * Podemos então saber quais commits foram enviados ao projeto e por quem;
    * Esse comando não tem nada haver com o branch e sim com o repositório.
+ 
+  ###  ╰┈┈┈➤ Limpando arquivos untracked
+   * O comando: *git clean* vai verificar e limpar arquivos que não estão sendo trackeados;
+   * Ou seja, todos os arquivos que você **não usou o: git add**;
+   * Utilizando para arquivos que são **gerados automaticamente**, por exemplo, e atrapalham a visuzalização do que é realmente importante.
+ 
+  ###  ╰┈┈┈➤ Otimizando o repositório
+   * O comando: *git gc* é uma abreviação para garbage collector;
+   * Ele identifica arquivos que **não são mais necessários** e os exclui;
+   * Isso fará com que o repositório seja otimizado em questão de **perfomance**.
+ 
+  ###  ╰┈┈┈➤ Verificando integridade dos arquivos
+   * O comando: *git fsck* é uma abriviação de File System ChecK;
+   * Esta instrução verifica a integridade de arquivos e sua conectividade;
+   * Verificando assim possíveis **corrupções de arquivo**;
+   * **Comando de rotina**, utilizado para ver se está tudo certo com nossos arquivos.
+ 
+  ###  ╰┈┈┈➤ Reflog
+   * O *git reflog* vai mapear todos os seus passos no repositório, até ima mudança de branch é inserida nesse log;
+   * Já o *git log*, que vimos anteriormente, apenas armazena os commits de um branch;
+   * Os **reflogs ficam salvos até expirar, o tempo de expiração padrão é de 30 dias**.
+ 
+  ###  ╰┈┈┈➤ Transformando o repo para arquivo
+   * Com o comando: *git archive* podemos transformar o repo em um arquivo compactado, por exemplo: 
+ 
+ ➔ O comando é : 
+ *git archivr --format zip --output main_files.zip main*
+    * E então o main vai ser zipado no arquivo main_files.zip.
+ 
+ ###  ╰┈┈┈➤ A Importância do commit
+   * **O problema**: commits sem sentido atrapalham o projeto;
+   * Precisamos padronizar os commits, para que o projeto cresça de forma saúdavel também no versionamento, isso ajuda em:
+ 
+  ➔ * Review do **Pull Request**;
+     * Melhoria dos log em *git log*;
+     * Manutenção do projeto (voltar código, por exemplo).
+ 
+   ###  ╰┈┈┈➤ Branches com commits ruins
+    * Há uma solução chamada **private branches**;
+    * Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
+    * Ao fim da solução do problema podemos fazer um **rebase**;
+    * O comando é: *git rebase < atual > < funcionalidade > -i*;
+    * Escolhemos os branches para excluir (**squash**) e renomear com (**reword**).
+  (obs: para alterar os estados dos commits tem que apertar no i, e para finalizar x!)
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
