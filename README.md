@@ -177,17 +177,18 @@ O git é um projeto de código aberto.
    * **O problema**: commits sem sentido atrapalham o projeto;
    * Precisamos padronizar os commits, para que o projeto cresça de forma saúdavel também no versionamento, isso ajuda em:
  
-  ➔ * Review do **Pull Request**;
+     * Review do **Pull Request**;
      * Melhoria dos log em *git log*;
      * Manutenção do projeto (voltar código, por exemplo).
  
-   ###  ╰┈┈┈➤ Branches com commits ruins
-    * Há uma solução chamada **private branches**;
-    * Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
-    * Ao fim da solução do problema podemos fazer um **rebase**;
-    * O comando é: *git rebase < atual > < funcionalidade > -i*;
-    * Escolhemos os branches para excluir (**squash**) e renomear com (**reword**).
-  (obs: para alterar os estados dos commits tem que apertar no i, e para finalizar x!)
+ ###  ╰┈┈┈➤ Branches com commits ruins
+ 
+   * Há uma solução chamada **private branches**;
+   * Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
+   * Ao fim da solução do problema podemos fazer um **rebase**;
+   * O comando é: *git rebase < atual > < funcionalidade > -i*;
+   * Escolhemos os branches para excluir (**squash**) e renomear com (**reword**).
+   * obs: para alterar os estados dos commits tem que apertar no i, e para finalizar x!
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
