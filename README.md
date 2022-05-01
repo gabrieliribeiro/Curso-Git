@@ -182,13 +182,21 @@ O git é um projeto de código aberto.
      * Manutenção do projeto (voltar código, por exemplo).
  
  ###  ╰┈┈┈➤ Branches com commits ruins
- 
    * Há uma solução chamada **private branches**;
    * Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
    * Ao fim da solução do problema podemos fazer um **rebase**;
    * O comando é: *git rebase < atual > < funcionalidade > -i*;
    * Escolhemos os branches para excluir (**squash**) e renomear com (**reword**).
    * obs: para alterar os estados dos commits tem que apertar no i, e para finalizar x!
+ 
+  ###  ╰┈┈┈➤ Boas mensangens de commit
+   * Separa assunto do corpo da mensagem;
+   * Assunto com no máximo 50 caracteres;
+   * Assunto com a letra inicial maiúscula;
+   * Corpo com no máximo 72 caracteres;
+   * Explicar o por que e como do commit, e não como o código foi escrito.
+ 
+  
  
  (ﾉ◕ヮ◕)ﾉ*✲ﾟ*｡⋆
 
